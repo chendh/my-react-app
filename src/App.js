@@ -5,6 +5,7 @@ import MySlider from "./MySlider";
 function App() {
   return (
     <div className="App">
+      <h1>Javascript程式設計，使用react</h1>
       <h2>第一個元件</h2>
       <MySlider />
       <MySlider />
