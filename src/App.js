@@ -5,8 +5,12 @@ import MySlider from "./MySlider";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" />
+      <h2>第一個元件</h2>
+      <MySlider />
+      <MySlider />
+      <MySlider />
+      {/* <header className="App-header"> */}
+      {/* <img src={logo} className="App-logo" alt="logo" />
         <h1>Hello React! 2024.5.1</h1>
         <a
           className="App-link"
@@ -17,11 +21,7 @@ function App() {
           Learn React
         </a> */}
 
-      </header>
-      <section>
-        <h2>第一個元件</h2>
-        <MySlider />
-      </section>
+      {/* </header> */}
     </div>
   );
 }
