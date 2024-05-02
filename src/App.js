@@ -1,20 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import MySlider from './MySlider';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <h1>Hello React! 2024.5.2</h1>
-        {/* <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
+        <h2>React第一個元件</h2>
+        <MySlider color="RED"/>
+        <MySlider color="GREEN"/>
+        <MySlider color="BLUE"/>
       </header>
     </div>
   );
