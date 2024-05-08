@@ -1,9 +1,12 @@
 import { useState } from "react";
 
-function MySlider() {
+function MySlider({onChange}) {
   const [value, setValue] = useState(128);
   const handleChange = (e) => {
     setValue(e.target.value);
+    if (onChange){
+      onChange(e.target.value);
+    }
   };
   return (
     <div>
