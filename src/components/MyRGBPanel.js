@@ -7,27 +7,32 @@ function MyRGBPanel() {
     const [g, setG] = useState(128);
     const [b, setB] = useState(128);
 
-    const updateR = (value) => setR(value);
-    const updateG = (value) => setG(value);
-    const updateB = (value) => setB(value);
+    const updateR = (v) => setR(v);
+    const updateG = (v) => setG(v);
+    const updateB = (v) => setB(v);
+
+    const rgbCss = {
+        border: "1px solid blue",
+        borderRadius: "20px",
+        width: "300px",
+        display: "flex",
+        flexDirection: "column",
+        padding: "20px",
+        justifyContent: "center",
+        alignItems: "center",
+        margin: "auto",
+      };
   return (
     <>
       <div
-        style={{
-          border: "1px solid blue",
-          borderRadius: "20px",
-          width: "300px",
-          display: "flex",
-          flexDirection: "column",
-          padding: "20px",
-          justifyContent: "center",
-          alignItems: "center",
-          margin: "auto",
-        }}
+        style={rgbCss}
       >
+        <h2 style={{color: "red"}}>
+          目前色彩
+        </h2>
         <div
           style={{
-            width: "200px",
+            width: "250px",
             height: "100px",
             backgroundColor: `rgb(${r}, ${g}, ${b})`,
           }}

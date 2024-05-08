@@ -1,11 +1,13 @@
 import "./App.css";
 import MyRGBPanel from "./components/MyRGBPanel";
+import MySlider from "./components/MySlider";
 
 function App() {
   return (
     <div className="App">
-      <h1>Javascript程式設計，使用react</h1>
-      <h2>第一個元件</h2>
+      <h1>MySlider</h1>
+      <MySlider />
+      <h1>MyRGBPanel</h1>
       <MyRGBPanel />
     </div>
   );
