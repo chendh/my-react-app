@@ -1,15 +1,15 @@
-.calculator{
-    width: 320px;
-    height: 500px;
+.calculator {
+    width: 350px;
     color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 10px;
     background-color: grey;
     padding: 10px;
     border: 1px solid black;
+    margin: auto;
 }
 
-.display{
+.display {
     width: 100%;
     height: 75px;
     background-color: black;
@@ -18,7 +18,40 @@
     border-radius: 5px;
 }
 
-.buttons{
+.buttons {
     display: inline-block;
     margin: 10px;
+}
+
+.btn {
+    background-color: #323232;
+    color: white;
+    padding: 5%;
+    border: 0px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.btn-action {
+    background-color: brown;
+    color: bisque;
+}
+
+.btn-operator {
+    background-color: darkorange;
+}
+
+.btn-0 {
+    width: 130px;
+    border-radius: 30px;
+}
+
+.btn:hover,
+.btn-0:hover {
+    background-color: white;
+    color:#323232;
 }
