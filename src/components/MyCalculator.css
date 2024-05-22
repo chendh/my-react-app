@@ -33,6 +33,7 @@
     border: 0px;
     padding: 5%;
     margin: 5px;
+    cursor: pointer;
 }
 
 .btn-action {
@@ -47,4 +48,15 @@
 .btn-0 {
     width: 130px;
     border-radius: 30px;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.btn:active{
+    background-color: darkred;
+    color: white;
 }
