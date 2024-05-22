@@ -4,6 +4,7 @@ import "./MyCalculator.css";
 function MyButton(props) {
     const handelClick = (e) =>{
         props.buttonClicked(e.target.value);
+        // alert(e.target.value);
     }
   return (
     <div className="board">
@@ -17,7 +18,7 @@ function MyButton(props) {
         <button className="btn" value="7" onClick={handelClick}>7</button>
         <button className="btn" value="8" onClick={handelClick}>8</button>
         <button className="btn" value="9" onClick={handelClick}>9</button>
-        <button className="btn btn-operator" value="/" onClick={handelClick}>*</button>
+        <button className="btn btn-operator" value="*" onClick={handelClick}>*</button>
       </div>
       <div>
         <button className="btn" value="4" onClick={handelClick}>4</button>

@@ -1,7 +1,7 @@
 import React from 'react';
 
-function MyDisplay(){
-    return <div className='display'></div>
+function MyDisplay(props){
+    return <div className='display'>{props.result}</div>
 }
 
 export default MyDisplay;
