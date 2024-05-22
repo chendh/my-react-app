@@ -1,7 +1,7 @@
 import React from 'react';
 
 function MyDisplay(){
-    return <div className='display'>計算結果</div>
+    return <div className='display'></div>
 }
 
 export default MyDisplay;
