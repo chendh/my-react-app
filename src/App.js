@@ -1,7 +1,7 @@
 import "./App.css";
-import MyRGBPanel from "./components/MyRGBPanel";
-import MySlider from "./components/MySlider";
-import MyCalculator from "./components/MyCalculator";
+import MyRGBPanel from "./components/rgb-panel/MyRGBPanel";
+import MySlider from "./components/rgb-panel/MySlider";
+import MyCalculator from "./components/calculator/MyCalculator";
 
 function App() {
   return (
