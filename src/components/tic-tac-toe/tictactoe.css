@@ -1,15 +1,46 @@
-.square{
+.square {
     background-color: white;
     width: 50px;
     height: 50px;
     border: 1px solid darkgray;
     font-size: 24px;
     font-weight: bold;
+    line-height: 50px;
     text-align: center;
+    /* margin-right: -1px;
+    margin-top: -1px; */
+    padding: 0;
 }
 
-.board-row:after{
+.board-row:after {
     clear: both;
     content: '';
     display: table;
+}
+
+.game {
+    width: 400px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    border: 3px solid blue;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.game-board {
+    border: 1px solid sandybrown;
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.game-info {
+    margin-left: 60px;
+}
+
+.status {
+    margin-bottom: 10px;
 }
