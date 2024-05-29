@@ -13,7 +13,7 @@ function Board({ xIsNext, squares, onPlay }) {
     onPlay(nextSquares);
   };
 
-  let status = "玩家資訊";
+  let status = "下一個玩家: " + (xIsNext ? "X" : "O");
   return (
     <>
       <div className="status">{status}</div>
