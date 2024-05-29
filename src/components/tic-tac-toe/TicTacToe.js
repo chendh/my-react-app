@@ -8,13 +8,15 @@ function TicTacToe() {
   const currentSquares = history[currentMove];
   const xIsNext = currentMove % 2 === 0;
 
-  const handlePlay =() =>{
-    alert("遊戲進行中");
-  }
+  const handlePlay = (nextSquares) => {
+    const nextHistory = [...history.slice(0, currentMove + 1), nextSquares];
+    setHistory(nextHistory);
+    setCurrentMove(nextHistory.length - 1);
+  };
   return (
     <div className="game">
       <div className="game-board">
-        <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}/>
+        <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
       </div>
     </div>
   );
