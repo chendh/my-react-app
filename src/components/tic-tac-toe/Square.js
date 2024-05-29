@@ -1,11 +1,9 @@
 import React from "react";
 import "./tictactoe.css";
 
-function Square() {
+function Square({value, onSquareClick}) {
   return (
-    <div>
-      <button className="square">1</button>
-    </div>
+      <button className="square" onClick={onSquareClick}>{value}</button>
   );
 }
 
