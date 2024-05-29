@@ -13,7 +13,7 @@
     cursor: pointer;
 }
 
-.square:hover{
+.square:hover {
     background-color: deeppink;
     color: white;
 }
@@ -30,7 +30,7 @@
 }
 
 .game-board {
-    background-color:gainsboro;
+    background-color: gainsboro;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid black;
