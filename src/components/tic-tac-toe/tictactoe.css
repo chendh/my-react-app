@@ -13,6 +13,11 @@
     cursor: pointer;
 }
 
+.square:hover{
+    background-color: deeppink;
+    color: white;
+}
+
 .game {
     width: 400px;
     margin: auto;
