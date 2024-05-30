@@ -7,9 +7,15 @@
     font-weight: bold;
     line-height: 50px;
     text-align: center;
+    float: left;
     /* margin-right: -1px;
     margin-top: -1px; */
     padding: 0;
+}
+
+.square:hover{
+    background-color: deeppink;
+    color: white;
 }
 
 .board-row:after {
