@@ -35,7 +35,15 @@ function Board({ xIsNext, squares, onPlay }) {
     return null;
   };
 
-  let status = "下一個玩家: " + (xIsNext ? "X" : "O");
+  const winner = calculateWinner(squares);
+  let status = winner ? `贏家: ${winner}` : `下一個玩家: ${xIsNext ? "X" : "O"}`;
+  // let status;
+  // if (winner) {
+  //   status = "贏家 " + winner;
+  // } else {
+  //   status = "下一個玩家: " + (xIsNext ? "X" : "O");
+  // }
+
   return (
     <>
       <div className="status">{status}</div>
